@@ -4,6 +4,19 @@
    =================================== */
 
 // ===================================
+// PAGE REFRESH ON LOAD
+// ===================================
+window.addEventListener('load', function () {
+    // Ensure page loads at top
+    window.scrollTo(0, 0);
+});
+
+// Prevent caching and ensure fresh load
+window.addEventListener('beforeunload', function () {
+    sessionStorage.clear();
+});
+
+// ===================================
 // SCROLL TO HERO ON PAGE LOAD
 // ===================================
 document.addEventListener('DOMContentLoaded', function () {

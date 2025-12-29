@@ -106,7 +106,72 @@ a:hover {
     box-shadow: 0 8px 20px rgba(55, 119, 82, 0.25);
 }
 
+/* Modern Donate Button */
+.btn-donate-modern {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0f5a3f 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
 
+.btn-donate-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+
+.btn-donate-modern:hover::before {
+    left: 100%;
+}
+
+.btn-donate-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(19, 119, 82, 0.3);
+}
+
+.btn-donate-modern:active {
+    transform: translateY(0);
+}
+
+.btn-donate-modern i {
+    font-size: 1.8rem;
+}
+
+.donate-icon {
+    font-size: 1.8rem;
+    display: block;
+}
+
+.donate-text {
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: block;
+}
+
+.donate-subtext {
+    font-weight: 500;
+    font-size: 0.85rem;
+    opacity: 0.95;
+    display: block;
+}
 
 /* ===================================
    NAVIGATION
