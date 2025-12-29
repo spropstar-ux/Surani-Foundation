@@ -1,7 +1,3 @@
-/* ===================================
-   SURRANI FOUNDATION - JAVASCRIPT
-   Modern Professional Interactions
-   =================================== */
 
 // ===================================
 // PAGE REFRESH ON LOAD
@@ -428,7 +424,7 @@ document.getElementById("loanForm")?.addEventListener("submit", async function (
   }
 
   try {
-    const response = await fetch("https://script.google.com/macros/s/AKfycbygtkdYLr3pY2b4OskbCHa0H3Zzo5NHhS280irD-ZyVk32mrekQ6YT22l3iWcDBN1j3ag/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwwgaWOLrjyqKpR49bB5GYa2jsJlqBEKB577MYIFGfXCm7OKdYjZ1BGdtL4yi25XJSOyg/exec", {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=utf-8"
